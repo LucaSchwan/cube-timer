@@ -1,0 +1,61 @@
+button{
+    width: 100px;
+    height: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover{
+    cursor: pointer;
+    align-self: center;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1 fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1.8fr 20px;
+    grid-template-areas:
+    "title blanc1 tims"
+    "blanc2 blanc1 tims"
+    "blanc2 timer tims"
+    "blanc2 btns tims"
+    "blanc2 blanc3 tims"
+    "dark blanc3 blanc4";     
+    grid-gap: 5px;                
+}
+
+#title {
+    font-family: 'Heiti TC';
+    font-weight: bold;
+    grid-area: title;
+    font-size: 25px;
+}
+
+#timesWrapper {
+    font-family: 'Heiti TC';
+    grid-area: tims;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    border: black 2px;
+}
+
+#timer{
+    text-align: center;
+    grid-area: timer;
+    font-family: 'Heiti TC';
+    font-size: 100px;
+}
+#btns {
+    font-family: 'Heiti TC';
+    grid-area: btns;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    padding-left: 0;
+}
+
+#dmCb {
+    font-family: 'Heiti TC';
+    grid-area: dark;
+    align-content: stretch;
+}
