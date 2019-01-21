@@ -46,7 +46,6 @@ function Stopwatch(elem) {
     };
 }
 
-
 /*
 Need to add if used elsewhere
 function timeFormatterInside(timeInMilliseconds) {
